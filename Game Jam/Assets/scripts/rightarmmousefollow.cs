@@ -20,6 +20,6 @@ public class rightarmmousefollow : MonoBehaviour
         mousePosition.y - transform.position.y
         );
 
-        transform.up = -direction;
+        transform.up = direction;
     }
 }

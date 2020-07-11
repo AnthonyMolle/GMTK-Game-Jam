@@ -13,10 +13,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Character
+  - Front Arm
+  - Back Arm
+  - Background
   - 
   - 
   - 
@@ -40,4 +40,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Back Arm
+    uniqueID: 3239025
+    locked: 0
+  - name: Front Arm
+    uniqueID: 3224431731
+    locked: 0
+  - name: Character
+    uniqueID: 2911415029
+    locked: 0
+  - name: Background
+    uniqueID: 626540525
     locked: 0

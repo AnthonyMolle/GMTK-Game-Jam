@@ -5,7 +5,7 @@ using UnityEngine;
 public class RICOSHAY : MonoBehaviour
 {
 
-    public float moveSpeed = 5f;
+    public float moveSpeed = 20f;
 
     Vector3 m_dir;
     public Rigidbody2D m_rigid2D; 

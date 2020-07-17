@@ -6,6 +6,8 @@ public class RICOSHAY : MonoBehaviour
 {
 
     public float moveSpeed = 20f;
+    private int count = 0;
+    public int max = 4;
 
     Vector3 m_dir;
     public Rigidbody2D m_rigid2D; 
@@ -18,6 +20,18 @@ public class RICOSHAY : MonoBehaviour
             m_dir = Vector2.Reflect(m_rigid2D.velocity, _wallNormal).normalized;
 
             m_rigid2D.velocity = m_dir * moveSpeed;
+
+            count++;
+
+            if(count == max)
+            {
+                Destroy(gameObject);
+            }
+
+        }
+        else if ( other.gameObject.CompareTag("entity"))
+        {
+            Destroy(gameObject);
         }
     }
 
